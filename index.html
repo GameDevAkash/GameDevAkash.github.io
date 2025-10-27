@@ -1,47 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GameDev Akash Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akash Sarkar - Game Developer Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #161b22;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #58a6ff;
+    }
+    header p {
+      color: #8b949e;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .project {
+      background-color: #161b22;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project h2 {
+      color: #58a6ff;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #8b949e;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>GameDev Akash</h1>
-    <p>Unity Game Developer | Android & iOS | Indie Creator</p>
+    <h1>Akash Sarkar</h1>
+    <p>Unity Game Developer | Portfolio</p>
+    <p>📧 <a href="mailto:sarkarakash1002@gmail.com">sarkarakash1002@gmail.com</a></p>
+    <p>🌐 <a href="https://github.com/gamedevakash" target="_blank">github.com/gamedevakash</a></p>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi! I'm Akash Sarkar, a Unity developer with over 3 years of experience. I've built 10+ games ranging from casual and arcade to card-based multiplayer games. I enjoy bringing ideas to life with solid gameplay and clean code.</p>
-  </section>
-
-  <section id="projects">
-    <h2>My Games</h2>
+  <section class="projects">
     <div class="project">
-      <h3>Go Fish (Offline Multiplayer)</h3>
-      <p>A Unity card game where players can play Go Fish with bots offline. Built with PlayFab structure and game state flow.</p>
-      <a href="https://github.com/yourusername/GoFishUnity" target="_blank">🔗 View on GitHub</a>
+      <h2>Go Fish (Offline Multiplayer)</h2>
+      <p>A local multiplayer card game built in Unity using ScriptableObjects and a state machine structure.</p>
+      <a href="https://github.com/gamedevakash/GoFish" target="_blank">View on GitHub</a>
     </div>
-
     <div class="project">
-      <h3>Scream Go Hero Clone</h3>
-      <p>A fun clone of Scream Go Hero using microphone input to control player jumps — built with physics-based mechanics.</p>
-      <a href="https://github.com/yourusername/ScreamGoHeroClone" target="_blank">🔗 View on GitHub</a>
+      <h2>Scream Go Hero Clone</h2>
+      <p>A voice-controlled endless runner where players use microphone input to jump and move forward.</p>
+      <a href="https://github.com/gamedevakash/ScreamGoHeroClone" target="_blank">View on GitHub</a>
     </div>
-
-    <!-- Add more games like this -->
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:akashsarkar.dev@gmail.com">akashsarkar.dev@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/gamedevakash" target="_blank">github.com/gamedevakash</a></p>
+    <div class="project">
+      <h2>Marine Economy Simulator</h2>
+      <p>A resource management prototype featuring currencies like Marine Metals, Bio-Food, and Aqua Gems.</p>
+      <a href="https://github.com/gamedevakash/MarineEconomySim" target="_blank">View on GitHub</a>
+    </div>
+    <!-- Add more project cards here -->
   </section>
 
   <footer>
-    <p>© 2025 GameDev Akash | Built with ❤️ using GitHub Pages</p>
+    <p>© 2025 Akash Sarkar | Built with ❤️ using HTML & GitHub Pages</p>
   </footer>
 </body>
 </html>
