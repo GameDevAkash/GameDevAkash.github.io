@@ -154,14 +154,25 @@
       });
     });
   </script>
-  <script>
+ <script>
   const mobileMenu = document.getElementById('mobile-menu');
   const navLinks = document.querySelector('.nav-links');
+  const navItems = document.querySelectorAll('.nav-links a');
 
+  // Toggle the menu open/close
   mobileMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     mobileMenu.classList.toggle('active');
   });
+
+  // Close the menu when a link is clicked
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      mobileMenu.classList.remove('active');
+    });
+  });
 </script>
+
 </body>
 </html>
