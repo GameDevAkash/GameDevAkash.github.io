@@ -3,115 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akash Sarkar - Game Developer Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0d1117;
-      color: #e6edf3;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      text-align: center;
-      padding: 3rem 1rem;
-      background-color: #161b22;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #58a6ff;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      color: #8b949e;
-      margin: 0.3rem 0;
-    }
-    .projects {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1rem;
-      gap: 1.5rem;
-    }
-    .project {
-      background-color: #161b22;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      transition: transform 0.2s, background-color 0.3s;
-      width: 90%;
-      max-width: 700px;
-    }
-    .project:hover {
-      transform: translateY(-5px);
-      background-color: #1b2430;
-    }
-    .project h2 {
-      color: #58a6ff;
-      margin-bottom: 0.5rem;
-    }
-    .project p {
-      color: #c9d1d9;
-      margin-bottom: 0.8rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #8b949e;
-      border-top: 1px solid #21262d;
-      margin-top: 2rem;
-    }
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Akash Sarkar | Game Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Akash Sarkar</h1>
-    <p>Unity Game Developer | Portfolio</p>
-    <p>📧 <a href="mailto:sarkarakash1002@gmail.com">sarkarakash1002@gmail.com</a></p>
-    <p>🌐 <a href="https://github.com/GameDevAkash" target="_blank">github.com/GameDevAkash</a></p>
-  </header>
-
-  <section class="projects">
-    <div class="project">
-      <h2>Go Fish Prototype</h2>
-      <p>A card game built in Unity with offline multiplayer functionality and turn-based logic.</p>
-      <a href="https://github.com/GameDevAkash/Go-Fish-Prototype" target="_blank">View on GitHub</a>
+  <!-- ===== NAVIGATION BAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">Akash Sarkar</h2>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="project">
-      <h2>Toon Tank (Netcode Multiplayer)</h2>
-      <p>A 3D multiplayer tank battle game made using Unity Netcode for GameObjects with smooth player sync.</p>
-      <a href="https://github.com/GameDevAkash/Toon_Tank_NetCodeMultiplayer" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h2>Mario Clone</h2>
-      <p>A 2D side-scroller inspired by Super Mario, featuring enemies, collectibles, and level-based progression.</p>
-      <a href="https://github.com/GameDevAkash/Mario" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h2>Paper vs Blocks</h2>
-      <p>A fast-paced arcade-style Unity game inspired by Paper.io, focusing on movement and collision logic.</p>
-      <a href="https://github.com/GameDevAkash/Paper_vs_Blocks" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h2>Ludo Multiplayer</h2>
-      <p>A digital version of the classic board game with multiplayer functionality and dice roll mechanics.</p>
-      <a href="https://github.com/GameDevAkash/Ludo_Multiplayer" target="_blank">View on GitHub</a>
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Akash Sarkar</span></h1>
+        <h2>Game Developer | Unity & Unreal Engine Specialist</h2>
+        <div class="social-links">
+          <a href="https://github.com/GameDevAkash" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/akash-sarkar-813242244/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="Profile Pic.jpg" alt="Akash Profile Picture" />
+      </div>
     </div>
   </section>
 
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+      <img src="Profile Pic.jpg" alt="Akash Profile" class="about-img" />
+      <p>
+        I'm Akash Sarkar, a passionate game developer specializing in Unity and Unreal Engine.
+        I love creating immersive gameplay experiences and experimenting with multiplayer systems,
+        shaders, and optimization. I’m constantly improving my craft while exploring new technologies
+        in game development.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="skills">
+    <h2 class="section-title">Skills</h2>
+    <ul class="skills-list">
+      <li>Unity 3D</li>
+      <li>Unreal Engine</li>
+      <li>C#</li>
+      <li>C++</li>
+      <li>PlayFab</li>
+      <li>Multiplayer Systems</li>
+      <li>Game Design</li>
+      <li>UI/UX for Games</li>
+    </ul>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+      <a href="https://github.com/GameDevAkash/Go-Fish-Prototype" target="_blank" class="project-card">Go Fish Prototype</a>
+      <a href="https://github.com/GameDevAkash/Toon_Tank_NetCodeMultiplayer" target="_blank" class="project-card">Toon Tank NetCode Multiplayer</a>
+      <a href="https://github.com/GameDevAkash/Mario" target="_blank" class="project-card">Mario</a>
+      <a href="https://github.com/GameDevAkash/Paper_vs_Blocks" target="_blank" class="project-card">Paper vs Blocks</a>
+      <a href="https://github.com/GameDevAkash/Ludo_Multiplayer" target="_blank" class="project-card">Ludo Multiplayer</a>
+    </div>
+  </section>
+
+  <!-- ===== RESUME SECTION ===== -->
+  <section id="resume" class="resume">
+    <h2 class="section-title">Resume</h2>
+    <p>Click below to view or download my resume.</p>
+    <a href="Akash_CV.docx" download class="btn">Download Resume</a>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:sarkarakash1002@gmail.com">sarkarakash1002@gmail.com</a></p>
+  </section>
+
   <footer>
-    <p>© 2025 Akash Sarkar | Built with ❤️ using HTML & GitHub Pages</p>
+    <p>© 2025 Akash Sarkar | All Rights Reserved</p>
   </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
 </body>
 </html>
