@@ -9,19 +9,23 @@
 </head>
 <body>
   <!-- ===== NAVIGATION BAR ===== -->
+  <header>
   <nav class="navbar">
-    <div class="nav-container">
-      <h2 class="logo">Akash Sarkar</h2>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <div class="logo">Akash <span>Sarkar</span></div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
+</header>
 
   <!-- ===== HERO SECTION ===== -->
   <section id="home" class="hero">
@@ -150,5 +154,14 @@
       });
     });
   </script>
+  <script>
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
