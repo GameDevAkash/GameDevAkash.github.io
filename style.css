@@ -347,3 +347,46 @@ section {
     width: 95%;
   }
 }
+/* ===== Highlights Section ===== */
+.highlights {
+  padding: 5rem 10%;
+  background: #0d0f16;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat-card {
+  background: #0f111a;
+  border: 1px solid #00bfff;
+  border-radius: 12px;
+  width: 220px;
+  padding: 2rem 1rem;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #00bfff;
+}
+
+.stat-card h3 {
+  color: #00bfff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px #00bfff;
+}
+
+.stat-card p {
+  color: #d0d0d0;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
