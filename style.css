@@ -1,0 +1,113 @@
+/* ====== General Page Setup ====== */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  background: #0f1116;
+  color: #e6e6e6;
+  line-height: 1.6;
+}
+
+/* ====== Header ====== */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #b0b0b0;
+}
+
+/* ====== Section Styles ====== */
+section {
+  padding: 40px 10%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #00bfff;
+  border-bottom: 2px solid #00bfff;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* ====== Projects ====== */
+.project {
+  background: #1a1c23;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #00bfff;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Skills List ====== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #1a1c23;
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 6px;
+  border-radius: 6px;
+  color: #e6e6e6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ====== Contact Section ====== */
+#contact a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  color: #888;
+  font-size: 0.9em;
+}
