@@ -67,7 +67,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-top: 4rem;
+  padding-top: 6rem;
   border-bottom: 1px solid #0f111a;
 }
 
@@ -250,9 +250,13 @@ body {
 
 /* ===== Resume ===== */
 .resume {
-  padding: 6rem 10%;
+  padding: 8rem 10% 6rem 10%;
   background: #0d0f16;
   text-align: center;
+}
+
+.resume p {
+  margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -327,6 +331,11 @@ footer {
   color: #808080;
   border-top: 1px solid #00bfff;
   box-shadow: 0 -3px 15px rgba(0, 191, 255, 0.2);
+}
+
+/* ===== Scroll Margin Fix for Navbar ===== */
+section {
+  scroll-margin-top: 80px; /* ensures section headings appear below navbar */
 }
 
 /* ===== Responsive ===== */
